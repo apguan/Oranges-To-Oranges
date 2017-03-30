@@ -1,6 +1,7 @@
 import React from 'react';
 import MessageListItem from './MessageListItem.jsx';
 
+<<<<<<< 1ca69d74abd8827feb75bb1fe053a201ce634c45
 class Messages extends React.Component {
   constructor(props) {
     super(props)
@@ -34,4 +35,19 @@ class Messages extends React.Component {
 }
 
 
+=======
+
+var Messages = function(props) {
+  const allMessages = props.message.map( (msg,i) => {
+    <MessageListItem key={i} msg={msg} />
+  })
+
+  return (
+    <ul className="all-messages">
+      {allMessages}
+    </ul>
+  )
+}
+
+>>>>>>> imported logout component to lobby.jsx
 export default Messages;
