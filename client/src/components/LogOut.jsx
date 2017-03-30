@@ -24,7 +24,6 @@ class LogOut extends React.Component {
 
   }
 
-
   render() {
     return (
       <Button id="log-out" bsSize="small" onClick={this.destroySession}>Log Out</Button>

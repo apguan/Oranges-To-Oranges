@@ -4,10 +4,11 @@ import GameList from './GameList.jsx';
 import $ from 'jquery';
 import CreateGame from './CreateGame.jsx';
 import YourGames from './YourGames.jsx';
-import PlayerDisconnected from './PlayerDisconnected.jsx'
+import PlayerDisconnected from './PlayerDisconnected.jsx';
 import { Button, Form, FormGroup, Col, FormControl, ControlLabel, PageHeader } from 'react-bootstrap';
 import LogOut from './LogOut.jsx';
 import UsernameDisplay from './usernameDisplay.jsx'
+
 
 var hostUrl = process.env.LIVE_URL || 'http://localhost:3000/';
 
