@@ -14,7 +14,6 @@ class LogOut extends React.Component {
       url: '/logout',
       success: (data) => {
         console.log('see you next time!')
-        context.props.sendToHome()
         this.props.sendToHome()
       },
       error: () => {
@@ -29,6 +28,7 @@ class LogOut extends React.Component {
       <Button id="log-out" bsSize="small" onClick={this.destroySession}>Log Out</Button>
     )
   }
+
 }
 
 export default LogOut;
